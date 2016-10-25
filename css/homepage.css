@@ -1,0 +1,169 @@
+html, body {
+  margin: 0;
+  background-color: #f2f2f2;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation */
+
+nav {
+   height: 90px;
+}
+
+.divlogo {
+  height: 90px;
+}
+
+@media (max-width: 768px) {
+  .divlogo {
+    text-align: center;
+  }  
+}
+
+.logo {
+  padding-top: 12px;
+  max-width: 150px;
+}
+
+nav div, ul, li {
+  display: inline;
+}
+
+nav ul {
+  line-height: 90px;
+  margin-bottom: 0;
+}
+
+nav ul li a {
+    color: #4A4A4A;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #E98B3F;
+  border-bottom: 1px solid #E98B3F;
+  text-decoration: none;
+}
+
+.login {
+  line-height: 90px;
+  padding: 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+   .login {
+    background-color: #343A3B;
+    text-align: center;
+    padding: 0;
+   }
+}
+
+input {
+    max-width: 100px;
+    height: 38px;
+    margin-left: 10px;
+    border: 0px;
+    padding-left: 10px;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    color: #939597;
+}
+
+@media (max-width: 768px) {
+
+   input:first-child { 
+    margin-left: 0px;
+  }
+}
+
+.btn {
+    border-radius: 0px;
+    background-color: #E98B3F;
+    color: white;
+}
+
+.menuicons {
+  text-align: right;
+  line-height: 90px;  
+}
+
+.icon {
+  height: 23px;
+  width: auto;
+  padding-left: 10px;
+}
+
+/* Slider */
+
+.page-head {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.sliderdescription h6 {
+  font-weight: 600;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  font-size: 14px; 
+}
+
+.mobh3 {
+  margin: 0;
+  line-height: 160px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@media (min-width: 0px) {
+   .page-head {
+    height: 160px;
+   }
+}
+
+@media (min-width: 500px) {
+   .page-head {
+    height: 200px;
+   }
+
+   .mobh3 {
+    line-height: 200px;
+   }
+}
+
+@media (min-width: 768px) {
+   .page-head {
+    height: 300px;
+   }
+
+   .sliderdescription {
+    background-color: rgba(255,255,255,0.85);
+    margin-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+   .page-head {
+    height: 400px;
+   }
+   .sliderdescription {
+    margin-top: 100px;
+   }
+}
+
+@media (min-width: 1200px) {
+    .page-head {
+     height: 500px;
+   }
+    .sliderdescription {
+      margin-top: 150px;
+   }
+   
+}
