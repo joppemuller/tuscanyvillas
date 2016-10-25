@@ -97,8 +97,7 @@ input {
 
 /* Slider */
 
-.page-head {
-    height: 400px;
+.homepage-head {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -120,16 +119,45 @@ input {
   font-weight: 400;
 }
 
+.slidernavl {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    left: 10px;
+    top: 310px;
+}
+
+.slidernavr {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    right: 10px;
+    top: 310px;
+}
+
 @media (min-width: 0px) {
-   .page-head {
+   .home-head {
     height: 160px;
    }
+   .slidernavl {
+    top: 247px;
+  }
+   .slidernavr {
+    top: 247px;
+  }
+
 }
 
 @media (min-width: 500px) {
-   .page-head {
+   .homepage-head {
     height: 200px;
    }
+    .slidernavl {
+    top: 268px;
+  }
+   .slidernavr {
+    top: 268px;
+  }
 
    .mobh3 {
     line-height: 200px;
@@ -137,7 +165,7 @@ input {
 }
 
 @media (min-width: 768px) {
-   .page-head {
+   .homepage-head {
     height: 300px;
    }
 
@@ -147,23 +175,42 @@ input {
     padding-right: 20px;
     padding-left: 20px;
     }
+
+    .slidernavl {
+    top: 228px;
+    }
+   .slidernavr {
+    top: 228px;
+    }
 }
 
 @media (min-width: 992px) {
-   .page-head {
+   .homepage-head {
     height: 400px;
    }
    .sliderdescription {
     margin-top: 100px;
    }
+    .slidernavl {
+    top: 280px;
+    }
+   .slidernavr {
+    top: 280px;
+    }
 }
 
 @media (min-width: 1200px) {
-    .page-head {
+    .homepage-head {
      height: 500px;
    }
     .sliderdescription {
       margin-top: 150px;
    }
+    .slidernavl {
+    top: 340px;
+    }
+   .slidernavr {
+    top: 340px;
+    }
    
 }
