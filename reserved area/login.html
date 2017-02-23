@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tuscany Villas - Guest Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/reserved.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i">
+	</head>
+<body onload="document.cb_edit.nomeutente.focus();">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3" style="text-align: center;">
+					<a href="../cb_accesso/logout.	php?ur=/index.php"><img src="http://www.tuscany-villas.com/images/LOGO_HIGH-Add.png" class="logo loginlogo"></a>
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 mobilecenter" style="background-color: #f2f2f2; padding-top: 15px;">
+					<form action="action.php" method="post" name="cb_edit">
+						
+							<p  style="text-align: center;">Insert your username and password below to access our Guest Login, where you will find information pertaining to your booking proposal.</p>		
+						<br>
+						<fieldset class="testo" style="text-align: center;"><legend>Insert your username and password:</legend>
+							<p class="loginp">Guest Username<b style="color: #cc0000">*</b></p>
+							<input tabindex="1" type="text" MaxLength="100" class="w100" name="nomeutente" value=""  />
+							<p class="loginp">Password<b style="color: #cc0000">*</b></p>
+							<input tabindex="2" type="password" MaxLength="100" class="w100" name="password"  />	
+								</tr>
+						</fieldset>
+						<fieldset style="text-align: center;">
+							<input tabindex="3" type="button" value="Sign In" class="btn"  onclick="javascript:document.cb_edit.submit();" style="margin-top: 10px; margin-bottom: 20px;">
+						</fieldset>
+					</form>
+				</div>
+			</div>
+</body>
+</html>

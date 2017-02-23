@@ -1,0 +1,426 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	font-size: 16px;
+	line-height: 24px;	
+}
+
+ul {
+	padding-left: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+select {
+	width: 80%;
+}
+
+a {
+	color: #E98B3F;
+}
+
+a:hover {
+	color: #4A4A4A;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: #333;
+    text-decoration: none;
+}
+.btn {
+    border-radius: 0px;
+    background-color: #E98B3F;
+    color: white;
+}
+
+/* Nav */
+
+nav {
+    height: 90px;
+}
+
+.divlogo {
+    height: 90px;
+}
+
+.logo {
+    padding-top: 12px;
+    max-width: 150px;
+}
+
+.menuitems {
+    padding-top: 34px;
+}
+
+.menubtn {
+    padding: 12px;
+    text-transform: lowercase;
+}
+
+nav ul li a {
+    color: #4A4A4A;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #E98B3F;
+    border-bottom: 1px solid #E98B3F;
+    text-decoration: none;
+}
+
+nav div, ul, li {
+    display: inline;
+}
+
+.userinfo p {
+    font-size: 14px;
+    line-height: 10px;
+}
+
+.userinfo {
+	margin-top: 18px;
+}
+
+.customermenu a {
+    font-size: 16px;
+    text-transform: lowercase;
+    padding-left: 15px;
+}
+
+.loginlogo {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+	.loginlogo {
+		margin-top: 45px;
+		margin-bottom: 45px;
+	}
+}
+
+.loginp {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+	.mobiletext {
+		padding: 30px;
+	}
+
+	.mobilecenter {
+		text-align: center;
+	}
+
+	.customermenu a {
+    padding-left: 0px;
+}	
+}
+
+.quickinfobox {
+	margin-top: 15px;
+	padding: 15px;
+}
+
+.quickinfobox h3 {
+	margin-top: 0px;
+}
+
+.infohead {
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: 0px;
+}
+
+
+/* Personal Data */
+
+.personaldata input {
+	width: 100%;
+}
+
+.personaldata p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.personaldata div {
+	padding: 0px;
+	padding-right: 10px;	
+}
+
+.personaldata select {
+	width: 100%;
+}
+
+.personaldata input.btn {
+	margin-bottom: 10px;
+}
+
+/* Booking Proposal */
+
+.blp {
+	padding-top: 15px;
+}
+
+@media (max-width: 768px) {
+	.blp {
+		font-size: 12px;
+		padding-top: 5px;	
+	}
+}
+
+.bclist li {
+	display: inline;
+	padding-left: 3px;
+}
+
+.bclist li a {
+	margin-top: 5px;
+}
+
+.activetab {
+	background-color: #4A4A4A;
+}
+
+.bconditions {
+	background-color: #f2f2f2;
+	padding: 15px;
+}
+
+@media (max-width: 768px) {
+	.yatab p {
+		font-size: 13px;
+	}	
+}
+
+/* Guest Details */
+
+.cancel {
+    width: 19px;
+    vertical-align: top;
+    padding-top: 3px;
+    margin-left: 5px;
+}
+
+.guestsblock {
+    background-color: #f2f2f2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.guestsblock div, .guestsblock label, .guestsblock span {
+	padding: 0px;
+}
+
+.guestsblock input {
+
+}
+
+.guestsblock label, .extrainfo label {
+	margin-top: 10px;
+}
+
+.sendinfo {
+	background-color: rgb(211,92,69);
+    padding: 2px 8px;
+}
+
+.number h3, .number a, .number img {
+	display: inline;
+}
+
+.gsubmit {
+	margin-top: 10px;
+	width: auto;
+}
+
+.bedconfigh {
+	margin-top: 25px;
+	padding-left: 0px;
+}
+
+.extrainfo {
+	background-color: #f2f2f2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.onef {
+	width: 98%;
+}
+
+.extrainfo div, .extrainfo label, .extrainfo span {
+	padding: 0px;
+}
+
+.notes h5{
+	padding: 0px;
+}
+
+ .notes textarea {
+ 	padding: 5px;
+ 	padding-left: 7px;
+ }
+
+.moneytable tr:nth-child(even) {
+	background-color: #f2f2f2
+}
+
+.moneytable td, .moneytable th {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+/* Villa Details */
+
+.villadetails {
+	margin-bottom: 75px;
+}
+
+.villadetails img {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* Contract */
+
+#contratto img {
+	width: auto;
+}
+
+/* How To Arrive */
+
+.hta img {
+	width: auto;
+}
+
+.hta {
+	margin-bottom: 75px;
+}
+
+.hta h4 {
+	margin-top: 35px;
+}
+
+/* Voucher */
+
+.voucher {
+	margin-bottom: 75px;
+}
+
+.voucher img {
+	width: auto;
+}
+
+.bgg {
+	background: #f2f2f2;
+}
+
+.bgg td {
+	padding: 5px 5px; 
+}
+
+.guestlistt label {
+	font-size: 12px;
+}
+
+@media (max-width: 768px) {
+	.guestlistt {
+		font-size: 12px;	
+	}
+}
+
+/* Feedback */
+
+.bggf {
+	background: #f2f2f2;
+	padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+	.bggf p, .bggf h4 {
+		padding: 0px;
+	}
+
+	.bggf h4 {
+		margin-top: 3px;
+	}
+}
+
+.feedbackform textarea {
+	width: 98%;
+	height: 200px;
+}
+
+.notepictures {
+	min-width: 200px;
+	width: 98%;
+	min-height: 150px; 
+}
+
+/* Footer */
+
+
+.widget {
+    text-align: center;
+}
+
+.widget {
+    width: 100%;
+    text-align: center;
+}
+
+.facebook h3 {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+
+.facebook {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+}
+
+.facebook {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#footer-bottom {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#footer-bottom a {
+	color: #2b2b2b;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#footer-bottom p {
+    font-size: 12px;
+}
+
+/* Helper Classes */
+
+
+.bg-grey {
+	background-color: #f2f2f2;
+}

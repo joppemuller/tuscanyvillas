@@ -1,0 +1,63 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Tuscany Villas - Guest Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/reserved.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i">
+		<script type="text/javascript" src="/js/cb_inizio.js"></script>
+		<script type="text/javascript" src="/js/overlibmws.js"></script>
+		<script type="text/javascript" src="/js/overlibmws_draggable.js"></script>
+		<script type="text/javascript" src="/js/overlibmws_hide.js"></script>
+	</head>
+<body>
+	<!-- <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div> -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 mobilecenter">
+				<a href="/cb_accesso/logout.php?ur=/"><img style="margin-top: 30px;" src="http://www.tuscany-villas.com/images/LOGO_HIGH-Add.png" class="logo"></a>
+			</div>
+			<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8 mobilecenter" style="padding-top: 15px;">
+				<h3>Feedback</h3><span class="infocliente">Ralph-D. Dr.Koehn</span>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 15px;">
+			<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 mobilecenter" style="background-color: #f2f2f2; padding-top: 10px; padding-bottom: 5px;">
+				<p>Welcome Ralph-D. Dr.Koehn,</p>
+				<p>You booked our property:<br><b>Villa Nicola</b><br>in Tuscany this summer:<br><b>12.08.2017</b> until <b>26.08.2017</b></p>
+				<a href="http://www.villen-toskana.de/mieten/317/" target="_blank">
+					<h3>Villa Nicola<h3>					
+					<img title="Villa Nicola" src="img/villa-nicola-16-12.jpg" border="0" >
+				</a>
+			</div>
+			
+			<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8 mobiletext" style="margin-bottom: 75px;">
+				<ul class="bclist">
+					<li class=""><a href="questionario_domande.php"" class="activetab btn">Feedback</a></li>
+					<li><a href="/areaquestionario/questionario_foto.php" class="btn">Upload Picture</a></li>
+				</ul>
+
+				<form action="questionario_domande_action.php" method="post" name="cb_edit" class="feedbackform">
+					<h3 style="margin-bottom: 35px;">Questionnaire information:</h3>
+					<h4>A) Mein feedback:</h4>
+					<p>Wir bitten Sie um Ihre pers&ouml;nliche Einsch&auml;tzung zum Haus, zur Lage, zur Ausstattung und zum Service unserer Agentur.</p>
+					<textarea name="idquestionariorotolone_24" class=""></textarea>
+					<h4>B) Ich m&ouml;chte keinen Kommentar abgeben.</h4>
+					<p>Warum nicht?</p>
+					<textarea name="idquestionariorotolone_25" class=""></textarea>
+					<h4>Authorization</h4>
+					<p>May we use your comments on our site with your name and email address, so that potential guests may contact you for more info.</p>
+					<ul>
+						<li><input type="radio"  checked  name="autorizzazione" value="SI">Yes</li>
+						<li><input type="radio"  name="autorizzazione" value="NO">No</li>
+					</ul>
+					<input type="submit"  disabled  value="Submit" name="invio" class="btn">
+					<input type="hidden" name="nonvogliorispondere" value="NO" >
+				</form>
+			</div>
+		</div>
+	</div>
+</BODY>
+</HTML>
