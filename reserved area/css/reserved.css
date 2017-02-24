@@ -65,6 +65,20 @@ nav {
     text-transform: lowercase;
 }
 
+@media (max-width: 450px) {
+	.menubtn {
+    padding: 6px;
+}
+
+}
+
+@media (max-width: 768px) {
+	.menuitems {
+		padding-top: 10px;
+		margin-bottom: 15px;
+	}
+}
+
 nav ul li a {
     color: #4A4A4A;
     font-size: 16px;
@@ -86,7 +100,8 @@ nav div, ul, li {
 }
 
 .userinfo {
-	margin-top: 18px;
+    margin-top: 34px;
+    text-align: right;
 }
 
 .customermenu a {
@@ -139,6 +154,18 @@ nav div, ul, li {
 	font-size: 12px;
 	font-weight: 600;
 	margin-bottom: 0px;
+}
+
+.houseselect {
+	max-width: 350px;
+}
+
+.logout img {
+    width: 20px;
+    display: inline;
+    margin-right: 5px;
+    position: relative;
+    top: -1px;
 }
 
 

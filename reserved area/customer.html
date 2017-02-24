@@ -24,21 +24,33 @@
             <!-- Start Main Menu-->
 			<nav class="menu">
 				
-				<a title="Tuscany Villas" href="/" class="col-xs-12 col-sm-3 col-md-2 divlogo">
+				<a title="Tuscany Villas" href="/" class="col-xs-6 col-sm-3 col-md-2 divlogo">
 					<img src="http://www.tuscany-villas.com/images/LOGO_HIGH-Add.png" alt="Tuscany Villas" class="logo">
 				</a>
 				
-				<ul class="col-md-7 menuitems">
+				<div class="col-xs-6 hidden-sm hidden-md hidden-lg userinfo">
+					<p>
+						<a href="/cb_accesso/logout.php" title="Logout"><span class="logout">
+							<img src="img/logout.svg">
+						</span>
+						Logout</a>
+					</p>
+				</div>	
+
+				<ul class="col-xs-12 col-sm-7 col-md-7 menuitems">
 					<li class="menubtn"><a href="/areacliente/index.php" title="Area Reserved">Home</a></li>
 					<li class="menubtn"><a href="/areacliente/anagrafica/index.php" title="Personal Data">Personal Data</a></li>
 					<li class="menubtn"><a href="/areacliente/prenotazione/index.php" title="Booking Proposal">Booking</a></li>
 					<li class="menubtn"><a href="/areacliente/eventi/index.php" title="City Links">City Links</a></li>
 				</ul>
 
-				<div class="col-xs-12 col-sm-6 col-md-3 userinfo">
-					<p><b>Benvenuto</b> Ralph- d  Drk&ouml;h..</p>
-					<p><a href="/cb_accesso/login_cambia.php" title="Change Username/Password">Change Username/Password</a></p>
-					<p><a href="/cb_accesso/logout.php" title="Logout">Logout</a></p>
+				<div class="hidden-xs col-sm-2 col-md-3 userinfo">
+					<p>
+						<a href="/cb_accesso/logout.php" title="Logout"><span class="logout">
+							<img src="img/logout.svg">
+						</span>
+						Logout</a>
+					</p>
 				</div>	
 
 			</nav> <!-- End Main Menu -->
@@ -49,11 +61,12 @@
 	    </div> 
 		<div class="container">    
 			<div class="row" style="margin-top: 15px;">
-				<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
-					<div class="quickinfobox" style="background-color: #f2f2f2;">
-						<h3>Quick info box</h3>
-						<p>In this box you find the address of your villa, the name and phone nr. of the caretaker who will welcome you at the house and all the contact info of the property owner.</p>
-						<select name="idmovimento" style="margin-bottom: 10px;"> onchange="location.href='index.php?<br />
+				<div class="col-xs-12">
+					<div class="quickinfobox">
+						<p><b>Benvenuto</b> Ralph D. Dr&ouml;man</p><br>
+						<h3>General information</h3>
+						<p>On this page you will find the address of your villa, the name and phone nr. of the caretaker who will welcome you at the house and all the contact info of the property owner.</p>
+						<select name="idmovimento" style="margin-bottom: 10px;" class="houseselect"> onchange="location.href='index.php?<br />
 							<b>Notice</b>:  Undefined index: az in <b>/var/www/clients/client1/web21/web/cb/cb_infocliente.php</b> on line <b>96</b><br />
 							<br />
 							<b>Notice</b>:  Undefined index: az in <b>/var/www/clients/client1/web21/web/cb/cb_infocliente.php</b> on line <b>96</b><br />
@@ -61,6 +74,13 @@
 							<option value="21971"  selected >Villa San Carlo: 06/08/2016-20/08/2016</option>
 							<option value="22124" >Villa Nicola: 12/08/2017-26/08/2017</option>
 						</select>
+						<div class="mobilecenter" style="font-size: 12px;">
+						[<a href="#" onclick="window.open('/cb/cb_infocliente_print.php?idmovimento=','','height=600,width=750,top=' + parseInt((screen.availHeight-600)/2) + ',left=' + parseInt((screen.availWidth-750)/2) + ',toolbar=yes, scrollbars=yes,resizable=yes');" title="Print version">Print version</a>]
+						</div>						
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="quickinfobox" style="background-color: #f2f2f2;">
 						<p class="infohead"><u>Name of your Villa or Apartment</u>:</p>
 						<p>Villa San Carlo >> Villa San Carlo</p>
 						<p class="infohead"><u>Arrival and Departure Date</u>:</p>
@@ -72,6 +92,11 @@
 						<p><a href="https://www.google.com/maps/d/edit?mid=zZM0kYL_HrBI.k5Rmuy0QDJhM&amp;usp=sharing" target="_blank" style="marg"><u>NEW: Google Map to Property</u></a></p>
 						<p><u>GPS: north</u>: <b style="font-size:11px;">43.103282000000000</b></p>
 						<p><u>GPS: east</u>: <b style="font-size:11px;">10.567115000000000</b></p>
+
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="quickinfobox" style="background-color: #f2f2f2;">
 						<p class="infohead"><u>Person that will welcome you there</u>:</p>
 						<p>Name: <b>Annalisa Barzanti</b></p>
 						<p class="infohead"><u>Emergency telephone</u>:</p>
@@ -80,17 +105,59 @@
 						<p><b>Luciano Messina</b></p>
 						<p>Email: <b>luciano.messina@virgilio.it</b></p>
 						<p>Cell phone 1: <b>3355724519</b></p>
-						<div class="mobilecenter" style="font-size: 12px;">
-						[<a href="#" onclick="window.open('/cb/cb_infocliente_print.php?idmovimento=','','height=600,width=750,top=' + parseInt((screen.availHeight-600)/2) + ',left=' + parseInt((screen.availWidth-750)/2) + ',toolbar=yes, scrollbars=yes,resizable=yes');" title="Print version">Print version</a>]
-						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8 mobiletext">
-				<p>
-					<strong>Herzlich Wilkommen</strong> Ralph-D. Dr.Koehn und alle Teilnehmer, <br /><br />Wir begr&uuml;&szlig;en Sie in Ihrem Kunden Bereich. Hier finden Sie alle Informationen bez&uuml;glich Ihrer Buchung und n&uuml;tzliche Hinweise f&uuml;r Ihre Reise in die Toskana. Bitte sehen Sie sich gr&uuml;ndlich um. Dieser Bereich dient ausschlie&szlig;lich zu Ihrer Information und Vorbereitung auf die Reise. Schicken Sie uns Ihre Kommentare und Fragen wenn etwas fehlt oder nicht funktioniert. In der linken oberen Ecke finden sie verschiedene Links zu den verschiednen Bereichen des Kunden Login. Hier nun eine kurze Erkl&auml;rung zu jedem Link und jedem Bereich. <br /><br /><strong>Kunden login&nbsp;</strong>klicken 	Sie hier um jederzeit zum Ausgangsmen&uuml; zur&uuml;ck zu kommen!! <br /><br /><strong>Pers&ouml;nliche angaben:</strong> Bitte nehmen Sie sich die Zeit und &uuml;berpr&uuml;fen Sie ob Ihre pers&ouml;nlichen Angaben korrekt sind. Speziell Ihre Telefon und Handy Nummern. F&uuml;r Notf&auml;lle sollten wir in der Lage sein Sie vor und w&auml;hrend Ihrer Toskana Reise zu erreichen. M&ouml;chten Sie etwas &auml;ndern oder erg&auml;nzen klicken Sie oben rechts auf den Reiter &Auml;NDERN, nehmen dann Ihre &Auml;nderungen vor und klicken anschlie&szlig;end unten rechts auf ABSCHICKEN. Ihre Ver&auml;nderungen sehen Sie dann sofort! <br /><br /><strong>Buchungsvorslag:</strong> Falls Sie mehr als eine Villa/Fewo mieten k&ouml;nnen Sie jeden Buchungsvorschlag separat aufrufen und &uuml;berpr&uuml;fen. Klicken Sie dazu auf den runden Radiobutton links von der jeweiligen Buchungsnummer und kontrollieren Sie&nbsp;alle Angaben welche zu dieser Buchung geh&ouml;ren, speziell die Daten der An- und Abreise. Folgende Links finden Sie im Bereich Buchungsvorschlag <br /><br /><strong>AGB:</strong>&nbsp;Hier finden Sie die Allgemeinen Gesch&auml;ftsbedingungen. Diese m&uuml;ssen von Ihnen akzeptiert werden ansonsten bleiben die anderen Links inaktiv! <br /><br /><strong>Kontoauszug:</strong><span>&nbsp;&nbsp; Hier finden Sie eine detaillierte Kostenaufstellung Ihrer Buchung. Sie sehen ob ihre Anzahlung verbucht wurde und wie die Restzahlung zu leisten ist. Bei Restzahlung an Tuscan Villas verwenden Sie die gleiche Bankverbindung wie bei der Anzahlung. Bei Restzahlung an den Besitzer k&ouml;nnen Sie bei vielen Objekten ausw&auml;hlen ob Bar vor Ort, Kreditkarte oder &Uuml;berweisung aufs Konto des Besitzers. Der Link BANKVERBINDUNG zeigt Ihnen in beiden F&auml;llen die zu verwendende Bank. Die Restzahlung ist in beiden F&auml;llen 45 Tage vor Anreise zu leisten. Falls Sie es vergessen bekommen Sie ein Email von uns zur Erinnerung. <br /><br /></span><strong>G&auml;steliste: </strong>Bitte jeden Gast einzeln eintragen und dann jeweils mit dem Button&nbsp;GAST EINTRAGEN&nbsp;best&auml;tigen. Die G&auml;steliste erscheint sofort als Resultat. Sie k&ouml;nnen Personen l&ouml;schen und neu eintragen. Unter der G&auml;steliste k&ouml;nnen Sie ihre gew&uuml;nschte Bettenkonfiguration angeben und ob Sie Babybetten ben&ouml;tigen oder Hunde mitbringen. Darunter finden Sie ein Kommentarfeld f&uuml;r Mitteilungen an den Besitzer und die Agentur, falls Sie versp&auml;tet Anreisen oder Extraw&uuml;nsche haben. Bitte mit dem Button ABSCHICKEN quittieren. <br /><br /><strong>Hausbeschreibung:&nbsp;</strong>Ein kurze Beschreibung ihrer Villa oder Ferienwohnung mit Bildern. <br /><br /><strong>Mietvertrag:&nbsp;&nbsp;</strong>Hier finden Sie eine Kopie des Buchungsvorschlages welcher mit &Uuml;berweisung der Anzahlung zum Mietvertrag wird. <br /><br /><strong>Anreis zum haus:</strong> Sie k&ouml;nnen hier Ihre Anfahrtsbeschreibung ausdrucken, wenn die Anzahlung bei uns eingegangen ist. Sie finden hier auch den Namen und die Tel.Nr des Besitzers/Hausverwalters welcher Sie vor Ort empfangen wird. Alle wichtigen KONTAKTDATEN IHRER VILLA finden Sie auch links im entsprechenden Textblock. Sie k&ouml;nnen beide separat ausgedruckt werden. Ben&uuml;tzen Sie bitte die dort angegebenen Telefonnummern und die Email wenn Sie mit dem Besitzer direkt in Kontakt treten m&ouml;chten um Fragen zum Haus im vorab zu kl&auml;ren. Schreiben Sie ihre Emails an die Besitzer in Englisch oder Italienisch. Anreise zwischen 16 und 21 Uhr, Abreise bis sp&auml;testens 10 Uhr morgens!! <br /><br /><strong>Voucher:</strong> Sie k&ouml;nnen hier Ihren Reisegutschein ausdrucken wenn die Anzahlung verbucht wurde und die G&auml;ste in der G&auml;steliste eingetragen sind. Alle G&auml;ste dieser Liste werden im Voucher genannt. Sollte ein Restbetrag vor Ort ausstehen ist dieser im Voucher aufgef&uuml;hrt. <strong><br /><br />Sehenwerte orte:</strong> Hier haben wir f&uuml;r Sie ein paar ausgew&auml;hlte kleine St&auml;dte und D&ouml;rfer der Toskana portr&auml;tiert, welche im weiteren Umkreis ihres Ferienhauses liegen. Mit Fotos und Informationen, falls Sie ein paar Anregungen f&uuml;r Ausfl&uuml;ge in die Umgebung m&ouml;chten. Schicken Sie uns Ihre Eindr&uuml;cke, Reisebeschreibungen und Fotos zu sehenswerten Orten, lokalen Besonderheiten und Attraktionen, Dorffeste und Wochenm&auml;rkte die Sie besucht haben. Wir ver&ouml;ffentlichen diese hier gern. So teilen Sie Ihre Erfahrungen mit anderen Toskana Fans. <br><br>Mit besten Gr&uuml;&szlig;en aus der Toskana, Thomas Behnke<span style="font-family: Tahoma;"><strong><br /><br />Unsere direkten Rufnummern:</strong>&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />Thomas Behnke Handy: +39 338 488 0432 <a href="mailto:info@tuscany-villas.com">info@tuscany-villas.com</a> &nbsp; &nbsp; &nbsp; &nbsp; <br /><span style="font-family: Tahoma;"><strong>Aus Deutschland:</strong>&nbsp; +49 (0) 152 54309445&nbsp;&nbsp;&nbsp;&nbsp;</span> <br /><span style="font-family: Tahoma;"><strong>Aus der Schweiz:&nbsp; </strong>+41 44 586 90 91</span> <br /><span style="font-family: Tahoma;"><strong>Aus England:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +44&nbsp; (0)20 7871 1349 <br /></span><span style="font-family: Tahoma;"><strong>Aus D&auml;nemark:</strong>&nbsp;&nbsp;&nbsp; +45&nbsp; 36 95 77 13 <br /></span><span style="font-family: Tahoma;"><strong>Aus USA:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +1&nbsp; (305) 600-4339</span>
-					</p>
-				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="quickinfobox" style="background-color: #f2f2f2;">
+						<p class="infohead"><u>Your Booking Agent:</u>:</p>
+						<p>If you have any questions regarding your booking please call or email your agent directly.</p>
+						<p>Name: <b>Joana Behnke</b></p>
+						<p class="infohead"><u>Contact details</u>:</p>
+						<p><a href="mailto:joana@tuscany-villas.com">joana@tuscany-villas.com</a></p>
+						<p>Cell phone DE: <b>+49 1525 4309445</b></p>
+						<p>Cell phone IT: <b>+39 346 621 2692</b></p>
+					</div>
+				</div>				
 			</div>
 		</div> <!-- Container -->
+		<footer id="footer-wrapper" style="margin-top: 50px;">
+			<div class="bg-grey">
+			    <div id="footer" class="container">
+
+			        <div class="row">
+
+			            
+
+			            <div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-3 facebook">
+			                <section class="widget">
+			                    <h3 class="titlewidget">Tuscany Villas / Facebook</h3>
+									<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FTuscany-Villas%2F144451145613979&amp;width=300&amp;height=245&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:245px;" allowtransparency="true"></iframe>
+			                </section>
+			            </div>
+						
+						
+			        </div>
+			    </div>
+			</div>
+
+		    <!-- Footer Bottom -->
+		    <div class="footer-bottom">
+		        <img src="http://www.tuscany-villas.com/images/Footer-Image-Tuscany-Villas.jpg">
+		        <div id="footer-bottom" class="container">
+
+		            <div class="row">
+		                <div class="col-xs-12 col-sm-6 col-md-6">
+		                    <p class="copyright">© Tuscany Villas 2017 - www.tuscany-villas.com - All Rights Reserved</p>
+		                </div>
+		                <div class="col-xs-12 col-sm-6 col-md-6">
+		                    <p class="designed-by">
+		                        <a href="http://www.tuscany-villas.com/cookies-policy.html" title="Cookies Policy">Cookies Policy</a> | <a href="http://www.tuscany-villas.com/booking-conditions.html" title="Booking conditions">Booking conditions</a> | <a href="http://www.tuscany-villas.com/faq.html" title="F.A.Q.">F.A.Q.</a> | <a href="http://www.tuscany-villas.com/contact-us.html" title="Contact us">Contact us</a></p>
+		    			</div>
+		            </div>
+		        </div>
+		    </div>
+		    <!-- End Footer Bottom -->
+
+		</footer>
 	</body>
 </html>
