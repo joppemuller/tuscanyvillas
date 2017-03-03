@@ -13,67 +13,60 @@
 		<script type="text/javascript" src="/js/overlibmws_hide.js"></script>
 	</head>
 <body>
-	<!-- <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div> -->
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 mobilecenter">
-				<a href="/cb_accesso/logout.php?ur=/"><img style="margin-top: 30px;" src="http://www.tuscany-villas.com/images/LOGO_HIGH-Add.png" class="logo"></a>
-			</div>
-			<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8 mobilecenter" style="padding-top: 15px;">
-				<h3>Guest Login</h3><span class="infocliente">Ralph-D. Dr.Koehn</span>
-			</div>
-		</div>
-		<div class="row" style="margin-top: 15px;">
-			<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
-				<h4 class="mobilecenter"><a href="/areacliente/index.php" title="Area Reserved">Reserved Area</a></h4>
-				<ul class="customermenu mobilecenter">
-					<li><a href="/areacliente/anagrafica/index.php" title="Personal Data">Personal Data</a></li>
-					<li><a href="/areacliente/prenotazione/index.php" title="Booking Proposal">Booking Proposal</a></li>
-					<li><a href="/areacliente/eventi/index.php" title="City Links">City Links</a></li>
-				</ul>
-				<div class="mobilecenter" style="font-size: 12px;">
-					[<a href="#" onclick="window.open('/cb/cb_infocliente_print.php?idmovimento=','','height=600,width=750,top=' + parseInt((screen.availHeight-600)/2) + ',left=' + parseInt((screen.availWidth-750)/2) + ',toolbar=yes, scrollbars=yes,resizable=yes');" title="Print version">Print version</a>]
+	<div class="container-fluid bg-grey">
+		<div class="container">
+			<!-- <div class="row">
+				<div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 mobilecenter">
+					<a href="/cb_accesso/logout.php?ur=/"><img style="margin-top: 30px;" src="http://www.tuscany-villas.com/images/LOGO_HIGH-Add.png" class="logo"></a>
 				</div>
-				<div class="quickinfobox" style="background-color: #f2f2f2;">
-					<h3>Quick info box</h3>
-					<p>In this box you find the address of your villa, the name and phone nr. of the caretaker who will welcome you at the house and all the contact info of the property owner.</p>
-					<select name="idmovimento" style="margin-bottom: 10px;"> onchange="location.href='index.php?<br />
-						<b>Notice</b>:  Undefined index: az in <b>/var/www/clients/client1/web21/web/cb/cb_infocliente.php</b> on line <b>96</b><br />
-						<br />
-						<b>Notice</b>:  Undefined index: az in <b>/var/www/clients/client1/web21/web/cb/cb_infocliente.php</b> on line <b>96</b><br />
-						idmovimento='+this.value;">
-						<option value="21971"  selected >Villa San Carlo: 06/08/2016-20/08/2016</option>
-						<option value="22124" >Villa Nicola: 12/08/2017-26/08/2017</option>
-					</select>
-					<p class="infohead"><u>Name of your Villa or Apartment</u>:</p>
-					<p>Villa San Carlo >> Villa San Carlo</p>
-					<p class="infohead"><u>Arrival and Departure Date</u>:</p>
-					<p>06/08/2016 - 20/08/2016</p>
-					<p class="infohead"><u>Street</u>:</p>
-					<p>Via del castelluccio  164 </p>
-					<p class="infohead"><u>Location</u>:</p>
-					<p>57027  San Vincenzo  (Livorno) </p>
-					<p><a href="https://www.google.com/maps/d/edit?mid=zZM0kYL_HrBI.k5Rmuy0QDJhM&amp;usp=sharing" target="_blank" style="marg"><u>NEW: Google Map to Property</u></a></p>
-					<p><u>GPS: north</u>: <b style="font-size:11px;">43.103282000000000</b></p>
-					<p><u>GPS: east</u>: <b style="font-size:11px;">10.567115000000000</b></p>
-					<p class="infohead"><u>Person that will welcome you there</u>:</p>
-					<p>Name: <b>Annalisa Barzanti</b></p>
-					<p class="infohead"><u>Emergency telephone</u>:</p>
-					<p><b>3292959856</b></p>
-					<p class="infohead"><u>Contact info of the property owner</u>:</p>
-					<p><b>Luciano Messina</b></p>
-					<p>Email: <b>luciano.messina@virgilio.it</b></p>
-					<p>Cell phone 1: <b>3355724519</b></p>
+				<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8 mobilecenter" style="padding-top: 15px;">
+					<h3>Guest Login</h3><span class="">Ralph-D. Dr.Koehn</span>
 				</div>
-				<div class="userinfo" style="background-color: #f2f2f2;">
-						<p><B>Benvenuto</B><br>ralph- d  drk&ouml;h..</p>
-						<p><a href="mailto:dres.med.koehn@t-online.de">dres.med.koehn@t-online.d..</a></p>
+			</div> -->
+			<header class="row">
+
+            <!-- Start Main Menu-->
+				<nav class="menu">
+					
+					<a title="Tuscany Villas" href="/" class="col-xs-6 col-sm-3 col-md-2 divlogo">
+						<img src="http://www.tuscany-villas.com/images/LOGO_HIGH-Add.png" alt="Tuscany Villas" class="logo">
+					</a>
+					
+					<div class="col-xs-6 hidden-sm hidden-md hidden-lg userinfo">
+						<p>
+							<a href="/cb_accesso/logout.php" title="Logout"><span class="logout">
+								<img src="img/logout.svg">
+							</span>
+							Logout</a>
 						</p>
-						<p><a href="/cb_accesso/login_cambia.php" title="Change Username/Password">Change Username/Password</a></p>
-						<p><a href="/cb_accesso/logout.php" title="Logout">Logout</a></p>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-7 col-md-8 col-lg-8 mobiletext">
+					</div>	
+
+					<ul class="col-xs-12 col-sm-7 col-md-7 menuitems">
+						<li class="menubtn"><a href="/areacliente/index.php" title="Area Reserved">Home</a></li>
+						<li class="menubtn"><a href="/areacliente/anagrafica/index.php" title="Personal Data">Personal Data</a></li>
+						<li class="menubtn"><a href="/areacliente/prenotazione/index.php" title="Booking Proposal">Booking</a></li>
+						<li class="menubtn"><a href="/areacliente/eventi/index.php" title="City Links">City Links</a></li>
+					</ul>
+
+					<div class="hidden-xs col-sm-2 col-md-3 userinfo">
+						<p>
+							<a href="/cb_accesso/logout.php" title="Logout"><span class="logout">
+								<img src="img/logout.svg">
+							</span>
+							Logout</a>
+						</p>
+					</div>	
+
+				</nav> <!-- End Main Menu -->
+
+
+	        </header>
+	    </div>    
+	</div>
+	<div class="page-head" style="background-repeat: no-repeat;background-position: center top;background-image: url('http://www.tuscany-villas.com/images/header-pagine/header-tutte.jpg'); "></div>  
+	<div class="container">
+		<div class="row content">
+			<div class="col-xs-12 mobiletext">
 			<FIELDSET class=fieldset100>
 				<LEGEND>List of your Bookings:</LEGEND>
 				<p>Below you will find a list of all active Booking Proposals, click on the radio button on the left side of each proposal to view detailed information regarding the cost, dates, guest list, how to arrive, funds received and funds due.</p><br>
@@ -156,7 +149,45 @@
 						element.onmousedown = function () { return false; } // mozilla
 					}
 				</script>			
+			</div>
 		</div>
 	</div>
+	<footer id="footer-wrapper" style="margin-top: 50px;">
+		<div class="bg-grey">
+		    <div id="footer" class="container">
+
+		        <div class="row">
+
+		            
+
+		            <div class="col-xs-12 col-sm-6 col-md-6 col-md-offset-3 facebook">
+		                <section class="widget">
+		                    <h3 class="titlewidget">Tuscany Villas / Facebook</h3>
+								<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FTuscany-Villas%2F144451145613979&amp;width=300&amp;height=245&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:245px;" allowtransparency="true"></iframe>
+		                </section>
+		            </div>
+					
+					
+		        </div>
+		    </div>
+		</div>
+	    <!-- End Footer Top -->
+	    <div class="footer-bottom">
+	        <img src="http://www.tuscany-villas.com/images/Footer-Image-Tuscany-Villas.jpg">
+	        <div id="footer-bottom" class="container">
+
+	            <div class="row">
+	                <div class="col-xs-12 col-sm-6 col-md-6">
+	                    <p class="copyright">© Tuscany Villas 2017 - www.tuscany-villas.com - All Rights Reserved</p>
+	                </div>
+	                <div class="col-xs-12 col-sm-6 col-md-6">
+	                    <p class="designed-by">
+	                        <a href="http://www.tuscany-villas.com/cookies-policy.html" title="Cookies Policy">Cookies Policy</a> | <a href="http://www.tuscany-villas.com/booking-conditions.html" title="Booking conditions">Booking conditions</a> | <a href="http://www.tuscany-villas.com/faq.html" title="F.A.Q.">F.A.Q.</a> | <a href="http://www.tuscany-villas.com/contact-us.html" title="Contact us">Contact us</a></p>
+	    			</div>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- End Footer Bottom -->
+	</footer>		
 </BODY>
 </HTML>
